@@ -84,6 +84,7 @@ main{
 }
 
 .card img{
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -132,12 +133,13 @@ main{
 
 @media (max-width: 1130px){
     .cards{
-        flex-wrap: wrap;
+        flex-direction: column;
         width: 50%;
     }
 
     .caixas{
         grid: none;
+        align-items: center;
     }
 }
 
@@ -145,5 +147,4 @@ main{
     #add-viagem p{
         text-align: justify;
     }
-
 }
