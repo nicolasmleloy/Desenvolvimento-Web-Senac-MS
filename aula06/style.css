@@ -1,0 +1,116 @@
+*{
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    background-color: aliceblue;
+}
+
+nav{
+    display: flex;
+    background-color: rgb(68, 68, 68);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+#titulo{
+    font-size: 1.3rem;
+}
+
+#menu{
+    display: flex;
+    gap: 20px;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+nav h1{
+    color: white;
+}
+
+#produtos{
+    display: grid;
+    grid-template-columns: 350px 350px 350px;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-content: center;
+    margin: 100px auto;
+    gap: 20px;
+}
+
+.produto{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    gap: 10px;
+    justify-content: center;
+    background-color: rgb(198, 198, 198);
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.produto:hover{
+    background-color: rgb(172, 172, 172);
+    transition: 0.5s;
+}
+
+
+
+.img-produto{
+    width: 100%;
+    height: 300px;
+}
+
+.img-produto img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.descricao-produto{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px 15px;
+}
+
+.preco-produto p{
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.btn-comprar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    border-radius: 10px;
+    margin: 10px;
+    height: 30px;
+    background-color: #007BFF;
+    color: white;
+    padding: 20px;
+}
+
+.btn-comprar:hover{
+    background-color: rgb(0, 191, 0);
+}
+
+@media (max-width: 1150px) {
+    #produtos{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .produto{
+        width: 350px;
+    }
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="antes-principal">
+        <div id="principal">
+            <div id="img-principal">
+                <img src="img-corinthians.jpg" alt="img-corinthians">
+            </div>
+            <div id="login">
+                <p>Login</p>
+                <input type="email" placeholder="nicolas@email.com" class="inputs">
+                <input type="password" class="inputs" placeholder="********">
+                <button id="entrar" type="submit">
+                    <p>Entrar</p>
+                </button>
+            </div>
+        </div>
+        <div id="mensagem">
+            <p></p>
+        </div>
+    </div>
+    <script>
+        var senha = document.getElementsByClassName("inputs")[1];
+        var entrar = document.getElementById("entrar");
+        var mensagem = document.getElementById("mensagem");
+    
+        entrar.addEventListener("click", () => {
+            if(senha.value != ""){
+                mensagem.style.display = "flex";
+                mensagem.firstElementChild.innerHTML = `O usuário Joãozinho123 já possui a senha ${senha.value}`;
+            }else{
+                mensagem.style.display = "flex";
+                mensagem.firstElementChild.innerHTML = "Campo de senha não preenchido!";
+            }
+            TransitionEvent
+        })
+    </script>
+</body>
+</html>

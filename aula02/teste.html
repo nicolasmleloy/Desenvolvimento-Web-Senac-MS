@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label id="usuario">Usuario:</label>
+    <input type="text">
+
+    <label id="senha">Senha:</label>
+    <input type="password">
+
+    <button onclick="resultado()"></button>
+
+    <span id="res"></span>
+
+    <script>
+        var res = document.getElementById("res")
+        var usuario = document.getElementById("usuario")
+        var senha = document.getElementById("senha")
+        function resultado(){
+            res.innerHTML = `Usuario Alek já possui a senha ${senha}`
+        }
+    </script>
+</body>
+</html>

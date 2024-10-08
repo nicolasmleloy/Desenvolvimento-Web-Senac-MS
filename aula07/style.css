@@ -1,0 +1,149 @@
+*{
+    margin: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: lightgrey;
+    padding: 10px 20px;
+}
+
+#menu{
+    display: flex;
+    gap: 20px;
+}
+
+#logo h1{
+    font-size: 2rem;
+}
+
+#menu a{
+    font-size: 1.3rem;
+    text-decoration: none;
+    color: black;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+    gap: 50px;
+}
+
+#titulo h1{
+    text-align: center;
+    font-size: 2.5rem;
+}
+
+#add-viagem{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    background-color: rgb(231, 231, 231);
+    padding: 30px;
+    margin: auto;
+    gap: 10px;
+}
+
+#add-viagem button{
+    width: 200px;
+    background-color: #007AFF;
+    border: none;
+    padding: 10px;
+    color: white;
+}
+
+#destinos-pop{
+    gap: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#destinos-pop h2{
+    font-size: 2rem;
+}
+
+.cards{
+    display: flex;
+    gap: 30px;
+    width: 80%;
+    height: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(242, 242, 242);
+    width: 100%;
+    height: 100%;
+    border: 1px solid gray;
+    border-radius: 10px;
+}
+
+.card img{
+    border-radius: 10px 10px 0px 0px;
+}
+
+.card .descricao{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 10px;
+}
+
+.ler-mais{
+    background-color: #007AFF;
+    border: none;
+    width: 100px;
+    height: 40px;
+    color: white;
+}
+
+#sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-bottom: 20px;
+}
+
+.caixas{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 20px;
+}
+
+.caixa{
+    background-color: gray;
+    padding: 10px;
+}
+
+.caixa-diferente{
+    background-color: rgb(222, 222, 222);
+}
+
+#sobre h2{
+    font-size: 2rem;
+}
+
+@media (max-width: 1130px){
+    .cards{
+        flex-wrap: wrap;
+        width: 50%;
+    }
+
+    .caixas{
+        grid: none;
+    }
+}
+
+@media (max-width: 520px) {
+    #add-viagem p{
+        text-align: justify;
+    }
+
+}

@@ -1,0 +1,23 @@
+body{
+    background-color: gray;
+}
+
+#princ{
+    display: flex;
+    background-color: cadetblue;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    height: 100vh;
+    gap: 10px;
+}
+
+.classe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+    background-color: bisque;
+}
