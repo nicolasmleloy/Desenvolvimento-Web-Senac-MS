@@ -1,0 +1,27 @@
+#estiloBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: gray;
+    transition: 1s all;
+}
+
+#mudarBody {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: lightgrey;
+    transition: 1s all;
+}
+
+#estiloAparecer {
+    background-color: black;
+    color: white;
+}
+
+.estiloRemover {
+    border: 2px dashed red;
+    transition: 1s all;
+}
